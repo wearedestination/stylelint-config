@@ -3,7 +3,8 @@ module.exports = {
         'selector-class-pattern': [
             '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
             {
-                'message': 'Class names must be in kebab-case'
+                'message': 'Class names must be in kebab-case',
+                'resolveNestedSelectors': true
             }
         ],
         'selector-id-pattern': [
