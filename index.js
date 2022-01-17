@@ -161,6 +161,7 @@ module.exports = {
         'value-keyword-case': [
             'lower',
             {
+                "ignoreFunctions": ["env"],
                 'ignoreKeywords': [
                     'BlinkMacSystemFont',
                     'Roboto',
