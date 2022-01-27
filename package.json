@@ -1,6 +1,6 @@
 {
     "name": "@destination/stylelint-config",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "Default stylelint config used by Destination",
     "author": "Andy Palmer <andy.palmer@wearedestination.com>",
     "license": "MIT",
