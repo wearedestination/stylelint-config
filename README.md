@@ -10,11 +10,13 @@ yarn add @destination/stylelint-config --dev
 
 ## Usage
 
-Add the following to your project's ruleset e.g in .stylelintrc.json
+Add the following to your project's ruleset e.g. in `package.json`:
 
 ```json
 {
-  "extends": "@destination/stylelint-config"
+  "stylelint": {
+    "extends": "@destination/stylelint-config"
+  }
 }
 ```
 

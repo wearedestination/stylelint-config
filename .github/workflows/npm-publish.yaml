@@ -1,4 +1,4 @@
-name: Node.js Package
+name: Publish to npm
 
 on:
   push:
@@ -6,25 +6,22 @@ on:
       - 'v*'
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  publish:
+    runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 14
-      - run: yarn install
-
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
-      - run: yarn install
-      - run: yarn publish --access=public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+      - run: |
+          package_json_version=$(node -e 'console.log(require("./package.json").version)')
+          if [ "v$package_json_version" != $GITHUB_REF_NAME ]; then
+            echo "Version in package.json (v$package_json_version) does not match the tag ($GITHUB_REF_NAME)"
+            exit 1
+          fi
+          
+          yarn install
+          yarn publish --access=public
