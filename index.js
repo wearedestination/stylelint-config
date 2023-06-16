@@ -134,7 +134,15 @@ module.exports = {
                 "ignoreProperties": {
                     "em": [
                         "margin",
-                        "padding"
+                        "margin-top",
+                        "margin-bottom",
+                        "margin-left",
+                        "margin-right",
+                        "padding",
+                        "padding-top",
+                        "padding-bottom",
+                        "padding-left",
+                        "padding-right"
                     ]
                 }
             }
