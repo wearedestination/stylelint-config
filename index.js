@@ -1,6 +1,7 @@
 module.exports = {
     "extends": "stylelint-config-standard-scss",
     "rules": {
+        "scss/dollar-variable-empty-line-before": null,
         "scss/no-global-function-names": null,
         "no-descending-specificity": null,
         "selector-class-pattern": [
