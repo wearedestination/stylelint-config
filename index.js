@@ -1,6 +1,8 @@
 module.exports = {
     "extends": "stylelint-config-standard-scss",
     "rules": {
+        "at-rule-no-unknown": null,
+        "scss/at-rule-no-unknown": true,
         "scss/dollar-variable-empty-line-before": null,
         "scss/no-global-function-names": null,
         "no-descending-specificity": null,
