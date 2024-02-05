@@ -1,6 +1,6 @@
 {
     "name": "@destination/stylelint-config",
-    "version": "3.0.1",
+    "version": "3.0.2",
     "description": "Default stylelint config used by Destination",
     "repository": {
         "type": "git",
