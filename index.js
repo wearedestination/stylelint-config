@@ -130,25 +130,6 @@ module.exports = {
                     "Georgia"
                 ]
             }
-        ],
-        "unit-disallowed-list": [
-            "em",
-            {
-                "ignoreProperties": {
-                    "em": [
-                        "margin",
-                        "margin-top",
-                        "margin-bottom",
-                        "margin-left",
-                        "margin-right",
-                        "padding",
-                        "padding-top",
-                        "padding-bottom",
-                        "padding-left",
-                        "padding-right"
-                    ]
-                }
-            }
         ]
     }
 };
