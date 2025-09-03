@@ -4,6 +4,7 @@ module.exports = {
         "at-rule-no-unknown": null,
         "scss/at-rule-no-unknown": true,
         "scss/dollar-variable-empty-line-before": null,
+        "scss/dollar-variable-colon-space-after": null,
         "scss/no-global-function-names": null,
         "no-descending-specificity": null,
         "selector-class-pattern": [
