@@ -6,6 +6,7 @@ module.exports = {
         "scss/dollar-variable-empty-line-before": null,
         "scss/dollar-variable-colon-space-after": null,
         "scss/no-global-function-names": null,
+        "scss/operator-no-newline-after": null,
         "no-descending-specificity": null,
         "selector-class-pattern": [
             "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
@@ -57,18 +58,7 @@ module.exports = {
         "selector-type-no-unknown": true,
         "string-no-newline": true,
         "unit-no-unknown": true,
-        "at-rule-empty-line-before": [
-            "always",
-            {
-                "except": [
-                    "blockless-after-same-name-blockless",
-                    "first-nested"
-                ],
-                "ignore": [
-                    "after-comment"
-                ]
-            }
-        ],
+        "at-rule-empty-line-before": null,
         "color-hex-length": "short",
         "color-named": [
             "never",
