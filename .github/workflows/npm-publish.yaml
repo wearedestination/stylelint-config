@@ -5,6 +5,11 @@ on:
     tags:
       - 'v*'
 
+permissions:
+  id-token: write  # Required for OIDC
+  contents: read
+
+
 jobs:
   publish:
     runs-on: ubuntu-24.04
@@ -22,8 +27,6 @@ jobs:
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
         with:
           node-version: '24.x'
           registry-url: https://registry.npmjs.org/
