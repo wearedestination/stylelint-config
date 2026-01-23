@@ -5,7 +5,7 @@ Defines a set of rules used by [StyleLint](https://stylelint.io/) to enforce our
 ## Installation
 
 ```sh
-yarn add @destination/stylelint-config --dev
+npm add @destination/stylelint-config --dev
 ```
 
 ## Usage
