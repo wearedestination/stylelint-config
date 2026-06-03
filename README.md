@@ -4,8 +4,8 @@ Defines a set of rules used by [StyleLint](https://stylelint.io/) to enforce our
 
 ## Installation
 
-```sh
-npm add @destination/stylelint-config --dev
+```console
+npm install stylelint @destination/stylelint-config --save-dev
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ Add the following to your project's ruleset e.g. in `package.json`:
 You must add the `stylelint-config-recommended-vue` package:
 
 ```sh
-npm add stylelint-config-recommended-vue --save-dev
+npm install stylelint-config-recommended-vue --save-dev
 ```
 
 Then update your stylelint config in package.json:
