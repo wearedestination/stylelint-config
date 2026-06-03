@@ -24,7 +24,7 @@ Add the following to your project's ruleset e.g. in `package.json`:
 
 You must add the `stylelint-config-recommended-vue` package:
 
-```sh
+```console
 npm install stylelint-config-recommended-vue --save-dev
 ```
 
