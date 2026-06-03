@@ -20,6 +20,25 @@ Add the following to your project's ruleset e.g. in `package.json`:
 }
 ```
 
+### Working with Vue
+
+You must add the `stylelint-config-recommended-vue` package:
+
+```sh
+npm add stylelint-config-recommended-vue --save-dev
+```
+
+Then update your stylelint config in package.json:
+
+```json
+"stylelint": {
+    "extends": [
+        "@destination/stylelint-config",
+        "stylelint-config-recommended-vue"
+    ]
+}
+```
+
 ## License
 
 Released under the [MIT license](LICENSE)
