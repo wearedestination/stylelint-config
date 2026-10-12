@@ -20,6 +20,17 @@ Add the following to your project's ruleset e.g. in `package.json`:
 }
 ```
 
+For plain CSS projects (no preprocessor), extend the CSS config instead. It applies the same rules
+on top of `stylelint-config-standard`, without the SCSS parser and plugin:
+
+```json
+{
+  "stylelint": {
+    "extends": "@destination/stylelint-config/css"
+  }
+}
+```
+
 ### Working with Vue
 
 You must add the `stylelint-config-recommended-vue` package:
