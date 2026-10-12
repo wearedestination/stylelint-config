@@ -10,9 +10,12 @@
     "author": "Andy Palmer <andy.palmer@wearedestination.com>",
     "main": "index.js",
     "files": [
-        "index.js"
+        "index.js",
+        "css.js",
+        "rules.js"
     ],
     "dependencies": {
+        "stylelint-config-standard": "^40.0.0",
         "stylelint-config-standard-scss": "^17.0.0"
     },
     "devDependencies": {
